@@ -1,22 +1,22 @@
 class PinterestInterviewProblem {
 
-//    private val grid = listOf(
-//        listOf('C', 'X', '0', '0', '0', '0', '0'),
-//        listOf('0', 'X', '0', '0', '0', '0', '0'),
-//        listOf('X', '0', '0', '0', '0', '0', '0'),
-//        listOf('0', 'C', 'S', '0', '0', '0', '0'),
-//        listOf('0', 'X', '0', '0', '0', '0', '0'),
-//        listOf('0', '0', '0', '0', '0', '0', '0'),
-//        listOf('0', '0', '0', '0', '0', '0', 'C'),
-//    )
-
     private val grid = listOf(
-        listOf('0', '0', '0'),
-        listOf('C', 'S', '0'),
-        listOf('0', '0', '0'),
+        listOf('C', 'X', '0', '0', '0', '0', '0'),
+        listOf('0', 'X', '0', '0', '0', '0', '0'),
+        listOf('X', '0', '0', '0', '0', '0', '0'),
+        listOf('0', 'C', 'S', '0', '0', '0', '0'),
+        listOf('0', 'X', '0', '0', '0', '0', '0'),
+        listOf('0', '0', '0', '0', '0', '0', '0'),
+        listOf('0', '0', '0', '0', '0', '0', 'C'),
     )
 
-    private val start = Pair(1, 1)
+//    private val grid = listOf(
+//        listOf('0', '0', '0'),
+//        listOf('C', 'S', '0'),
+//        listOf('0', '0', '0'),
+//    )
+
+    private val start = Pair(3, 2)
 
     fun solve() {
 
@@ -27,7 +27,7 @@ class PinterestInterviewProblem {
             results.add(MutableList(rows) { 0 })
         }
 
-        var stepsLeft = 3
+        var stepsLeft = 7
         // row, column
         val currentCells: MutableList<Pair<Int, Int>> = mutableListOf()
         val nextCellsToVisit: MutableList<Pair<Int, Int>> = mutableListOf()
@@ -57,12 +57,7 @@ class PinterestInterviewProblem {
                     }
                 }
             }
-            println("Steps left: $stepsLeft")
-            println("Next cells: $nextCellsToVisit")
-            for (r in results) {
-                println(r)
-            }
-            println("--------")
+
             for (cell in nextCellsToVisit) {
                 results[cell.first][cell.second] += 1
             }
