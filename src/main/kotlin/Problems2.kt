@@ -1,5 +1,3 @@
-import java.util.SortedSet
-
 class Problems2 {
 
     // 26
@@ -109,5 +107,64 @@ class Problems2 {
         } else {
             ind + k
         }
+    }
+
+    // [1,2,3]
+    // [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
+
+    // 1, 2, 3
+    // 1, 3, 2
+    // 2, 1, 3
+    // 3, 1, 2
+    // 2, 3, 1
+    // 3, 2, 1
+
+    // 0 0
+    // 1 2
+    // 2 1
+
+
+    // 0 1 2 3
+
+    // 0 1 2
+    // 1 2 3
+    // 2 3 0
+    // 3 0 1
+
+    // 0 1
+    // 1 2
+    // 2 0
+
+    // [0, 1, 2, 0, 1, 2]
+
+    // 1: 0, 0, 1, 1, 2, 2
+    // 2:
+    // 3:
+
+    fun permute_46(nums: IntArray): List<List<Int>> {
+        return permuteRec(nums.toList())
+    }
+
+    private fun permuteRec(currList: List<Int>): MutableList<MutableList<Int>> {
+        if (currList.size == 2) {
+            return mutableListOf(
+                mutableListOf(currList[0], currList[1]),
+                mutableListOf(currList[1], currList[0])
+            )
+        } else if (currList.size == 1) {
+            return mutableListOf(mutableListOf(currList[0]),)
+        }
+        val toReturn: MutableList<MutableList<Int>> = mutableListOf()
+        for (i in currList.indices) {
+            val newList = currList.toMutableList()
+            val newFirstElement = newList.removeAt(i)
+            val permutations = permuteRec(newList)
+            toReturn.addAll(
+                permutations.map { list ->
+                    mutableListOf(newFirstElement).apply { addAll(list) }
+                }
+            )
+        }
+        return toReturn
     }
 }
