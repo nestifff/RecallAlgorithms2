@@ -1,3 +1,5 @@
+package temp
+
 class Problems2 {
 
     // 26
@@ -96,10 +98,6 @@ class Problems2 {
         }
     }
 
-    // n = 4, k = 2
-    // [ 1,2,3,4]
-    // [ 3,4,1,2]
-    // [-1,2,1,4]
     fun getCorrectPosition(n: Int, k: Int, ind: Int): Int {
         val isInK = ind >= (n - k)
         return if (isInK) {
@@ -108,38 +106,6 @@ class Problems2 {
             ind + k
         }
     }
-
-    // [1,2,3]
-    // [[1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]]
-
-    // 1, 2, 3
-    // 1, 3, 2
-    // 2, 1, 3
-    // 3, 1, 2
-    // 2, 3, 1
-    // 3, 2, 1
-
-    // 0 0
-    // 1 2
-    // 2 1
-
-
-    // 0 1 2 3
-
-    // 0 1 2
-    // 1 2 3
-    // 2 3 0
-    // 3 0 1
-
-    // 0 1
-    // 1 2
-    // 2 0
-
-    // [0, 1, 2, 0, 1, 2]
-
-    // 1: 0, 0, 1, 1, 2, 2
-    // 2:
-    // 3:
 
     fun permute_46(nums: IntArray): List<List<Int>> {
         return permuteRec(nums.toList())

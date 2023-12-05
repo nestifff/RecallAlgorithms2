@@ -4,10 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e49ccd48-a32d-4704-9fb7-25aed9aa4d17" name="Changes" comment="Recall 4">
+    <list default="true" id="e49ccd48-a32d-4704-9fb7-25aed9aa4d17" name="Changes" comment="Permutations problem using recursion (the most obvious solution)">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Elevators.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/ProblemsTemp.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/UnivalTree.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/db/DataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/db/DecoratingDataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/db/InMemoryDataBase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/db/Transaction.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Problems2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Problems2.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/PinterestInterviewProblem.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/temp/PinterestInterviewProblem.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Problems.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/temp/Problems.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Problems2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/temp/Problems2.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +29,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin File" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -42,7 +53,9 @@
     <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2YMhNoihMJn5XPNhWTIY0mtubf2" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,6 +72,12 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/kotlin" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/kotlin/temp" />
+    </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="db" />
     </key>
   </component>
   <component name="RunManager">
@@ -101,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1701268185067</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Permutations problem using recursion (the most obvious solution)">
+      <created>1701287701309</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1701287701309</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,7 +145,8 @@
     <MESSAGE value="Recall 2" />
     <MESSAGE value="Recall 3" />
     <MESSAGE value="Recall 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="Recall 4" />
+    <MESSAGE value="Permutations problem using recursion (the most obvious solution)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Permutations problem using recursion (the most obvious solution)" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
